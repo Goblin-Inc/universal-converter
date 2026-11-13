@@ -1,0 +1,177 @@
+/* ── Universal Converter — global stylesheet ────────────────────────────────── */
+
+/* Palette tokens */
+/* Light theme base — dark theme override via QApplication.palette() in code   */
+
+QWidget {
+    background-color: #F7F7F5;
+    color: #1C1C1A;
+    font-family: "Inter", "Segoe UI", "SF Pro Display", system-ui, sans-serif;
+    font-size: 14px;
+}
+
+/* ── Main window ──────────────────────────────────────────────────────────────*/
+QMainWindow {
+    background-color: #F7F7F5;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────────────────────────*/
+#sidebar {
+    background-color: #EEECEA;
+    border-right: 1px solid #DDDBD6;
+    min-width: 56px;
+    max-width: 56px;
+}
+
+/* ── Drop zone ───────────────────────────────────────────────────────────────*/
+#drop_zone {
+    background-color: #FFFFFF;
+    border: 2px dashed #C8C6C0;
+    border-radius: 16px;
+    min-height: 200px;
+}
+
+#drop_zone:hover {
+    border-color: #7F77DD;
+    background-color: #F5F4FE;
+}
+
+#drop_zone[drag_active="true"] {
+    border-color: #7F77DD;
+    background-color: #EEEDFE;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────────*/
+QPushButton {
+    background-color: #1C1C1A;
+    color: #F7F7F5;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #3A3A38;
+}
+
+QPushButton:pressed {
+    background-color: #555553;
+}
+
+QPushButton:disabled {
+    background-color: #C8C6C0;
+    color: #888780;
+}
+
+QPushButton#btn_secondary {
+    background-color: transparent;
+    color: #1C1C1A;
+    border: 1px solid #C8C6C0;
+}
+
+QPushButton#btn_secondary:hover {
+    background-color: #EEECEA;
+}
+
+/* ── Format chips ────────────────────────────────────────────────────────────*/
+QPushButton#format_chip {
+    background-color: #EEECEA;
+    color: #1C1C1A;
+    border: 1px solid #DDDBD6;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+QPushButton#format_chip:hover {
+    background-color: #EEEDFE;
+    border-color: #AFA9EC;
+    color: #3C3489;
+}
+
+QPushButton#format_chip[selected="true"] {
+    background-color: #7F77DD;
+    color: #FFFFFF;
+    border-color: #7F77DD;
+}
+
+/* ── Labels ──────────────────────────────────────────────────────────────────*/
+QLabel#label_heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1C1C1A;
+}
+
+QLabel#label_subtext {
+    font-size: 13px;
+    color: #888780;
+}
+
+QLabel#label_filename {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1C1C1A;
+}
+
+QLabel#label_category {
+    font-size: 12px;
+    color: #5F5E5A;
+    background-color: #EEECEA;
+    border-radius: 4px;
+    padding: 2px 8px;
+}
+
+/* ── Progress bar ────────────────────────────────────────────────────────────*/
+QProgressBar {
+    background-color: #EEECEA;
+    border: none;
+    border-radius: 4px;
+    height: 6px;
+    text-align: center;
+    font-size: 0px;   /* hide percentage text */
+}
+
+QProgressBar::chunk {
+    background-color: #7F77DD;
+    border-radius: 4px;
+}
+
+/* ── File info card ──────────────────────────────────────────────────────────*/
+#file_info_card {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDBD6;
+    border-radius: 12px;
+}
+
+/* ── Job card ────────────────────────────────────────────────────────────────*/
+JobCard {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDBD6;
+    border-radius: 10px;
+}
+
+/* ── Scroll area ─────────────────────────────────────────────────────────────*/
+QScrollArea {
+    border: none;
+    background-color: transparent;
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 6px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #C8C6C0;
+    border-radius: 3px;
+    min-height: 24px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
