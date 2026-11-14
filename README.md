@@ -1,6 +1,8 @@
 # Universal Converter
 
-Offline file converter with a clean, minimal desktop UI.  
+> 🌐 **Language:** **English** | [Русский (README_Ru.md)](README_Ru.md)
+
+Offline file converter with a clean, minimal desktop UI built with **Python** and **PySide6**.  
 Drop a file → pick a format → get the result. No internet, no registration, no ads.
 
 ---
@@ -58,13 +60,13 @@ universal_converter/
 
 ## Development roadmap
 
-| Этап | Цель                              | Статус   |
-|------|-----------------------------------|----------|
-| 1    | Скелет проекта, архитектура MVC   | ✅ Done  |
-| 2    | Главный экран, Drag & Drop UI     | 🔜 Next  |
-| 3    | Конвертация изображений (Pillow)  | ⬜       |
-| 4    | Видео, аудио, документы, данные   | ⬜       |
-| 5    | Batch Mode, история, упаковка     | ⬜       |
+| Stage | Goal                              | Status   |
+|-------|-----------------------------------|----------|
+| 1     | Project skeleton, MVC architecture| ✅ Done  |
+| 2     | Main view, Drag & Drop UI         | 🔜 Next  |
+| 3     | Image conversion (Pillow)         | ⬜       |
+| 4     | Video, audio, documents, data     | ⬜       |
+| 5     | Batch Mode, history, packaging    | ⬜       |
 
 ---
 
